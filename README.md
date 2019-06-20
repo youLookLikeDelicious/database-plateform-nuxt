@@ -5,6 +5,6 @@
 封装了一个平滑过渡的JavaScript动画插件。（暂不支持rem、em、vh、vw）<br/>
 <br/>
 nuxt配置<br>
-		全局sass<br/>
-		命名视图
-		...
+&nbsp;&nbsp;&nbsp;&nbsp;全局sass<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;命名视图<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;...
