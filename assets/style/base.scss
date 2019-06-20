@@ -1,0 +1,93 @@
+html, body, div, p, table, tr, td, ul, ul li, input, img, h2 ,h3, h4, h5, span, i, article, table, td, tr, select, select option,section, header, textarea, br, hr, dl, dl dd, dl, dt{margin:0; padding: 0}
+body{background: #e9ebee; font-family: "Microsoft YaHei","SimSun",sans-serif}
+html, body, img{border: 0}
+textarea{
+    box-sizing: border-box;
+}
+html{
+    font-size: 625%;
+    overflow-y: scroll;
+}
+//内容容器
+.app{
+    width: 12.2rem;
+    margin: $nav-height + 0.12 auto 0 auto;
+    font-size: 0.16rem;
+    box-sizing: border-box;
+}
+.app-wrap{
+    width: 100%;
+    margin: 0 0.12rem;
+}
+table{
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+input, textaream, select{
+    outline: 0;
+    padding: 0.03rem;
+    box-sizing: border-box;
+    border-radius: 0.03rem;
+    border: 1px solid #c6c6c6;
+}
+::-webkit-selection{
+    background: #99CCFF
+}
+::-moz-selection{
+    background: #99CCFF
+}
+::-ms-selection{
+    background: #99CCFF
+}
+::selection{
+    background: #99CCFF
+}
+ul{list-style: none}
+a{
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+}
+// 浅灰色小子
+.fade1{
+    color: $light-gray;
+    font-size: 0.12rem;
+}
+.fade2{
+    color: $dark-gray;
+    font-size: 0.12rem;
+}
+// 禁止提交的按钮
+
+.deny_upload{
+    opacity: 0.4;
+    cursor: default;
+    &:hover{
+        box-shadow: 0 0 0 #fff;
+    }
+}
+.clear{
+    &:after{
+        content: '';
+        clear: both
+    }
+    &:before{
+        content: '';
+        clear: both
+    }
+}
+// 错误信息
+.error{
+    color: #CC0033;
+    font-size: 0.12rem;
+}
+.clear{
+    &:after{
+        content: '';
+        clear: both
+    }
+    &:before{
+        content: '';
+        clear: both
+    }
+}

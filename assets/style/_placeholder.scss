@@ -1,0 +1,159 @@
+%pointer{
+    cursor: pointer;
+}
+%blue1{
+    color: #20a4e9;
+}
+%float-right{
+    float: right;
+}
+%text-right{
+    text-align: right;
+}
+%position-relative{
+    position: relative;
+}
+%inline-block{
+    display: inline-block;
+}
+%display-none{
+    display: none;
+}
+// 默认无填充
+// @param $border边框样式
+// @param $
+%button{
+    width: 0.95rem;
+    height: 0.35rem;
+    border-radius: 0.09rem;
+    line-height: 0.35rem;
+    text-align: center;
+}
+%flex-justify{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-box-pack: justify;
+    -o-box-pack: justify;
+    justify-content: space-between;
+}
+%upload-btn{
+    @extend %button-not-filled;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    input{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+}
+%button-not-filled{
+    @extend %button;
+    border: 0.01rem solid #20a4e9;
+    @extend %blue1;
+}
+%button-filled{
+    @extend %button;
+    color: #FFFFFF ;
+    border: 0;
+    background-image: linear-gradient(#00d2fe,  #00d2ff );
+    transition: 0.2s;
+    &:hover{
+        box-shadow: 0 0 0.1rem #00d2fe;
+    }
+}
+%button-filled-red{
+    border-radius: 0.5rem;
+    text-align: center;
+    color: #FFFFFF ;
+    border: 0;
+    background-image: linear-gradient(#FF6666,  $red-color );
+    transition: 0.2s;
+    &:hover{
+        box-shadow: 0 0 0.03rem $red-color;
+    }
+}
+// 个人中心表格样式
+%table{
+    td{
+        padding: 0.24rem 0.3rem;
+    }
+    tr{
+        border-bottom: 0.01rem solid #dcdcdc;
+        td:first-child{
+            vertical-align: text-top;
+        }
+    }
+    input, select, textarea{
+        width: 3.5rem;
+    }
+}
+//侧边导航栏样式
+%side_nav{
+    color: white;
+    background: #232323;
+    overflow: hidden;
+    top: $nav-height;
+    position: fixed;
+    font-size: 0.16em;
+    ul{
+        width: 100%;
+        overflow: hidden;
+        transition-duration: 0.3s;
+        li{
+            padding-bottom: 12px;
+            transition: 0.3s;
+            white-space: nowrap;
+            position: relative;
+            left: 20px;
+        }
+        a{
+            &:hover{
+                color: #FF0033;
+            }
+        }
+    }
+    .line{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 93%;
+        size: 1px;
+        border: 1px solid #343434;
+        border-radius: 3px;
+    }
+}
+// 灰色12号小字体
+%gray_12_font{
+    font-size: 0.12rem;
+    color: #676767;
+}
+// 评论按钮样式
+%comment_submit_btn{
+    font-size: 0.13rem;
+    margin-top: 0.12rem;
+    line-height: 100%;
+    border-radius: 0.03rem;
+    padding: 0.05rem 0.07rem;
+    color: #fff;
+    box-sizing: border-box;
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#0099FF, endColorstr=#336699);
+    background-image: -webkit-linear-gradient(to bottom, #0099FF, #336699);
+    background-image: -moz-linear-gradient(to bottom, #0099FF, #336699);
+    background-image: -o-linear-gradient(to bottom, #0099FF, #336699);
+    background-image: -ms-linear-gradient(to bottom, #0099FF, #336699);
+    background-image: linear-gradient(to bottom, #0099FF, #336699);
+    &:hover{
+        filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#336699, endColorstr=#0099FF);
+        background-image: -webkit-linear-gradient(to bottom, to bottom, #336699 0%, #0099FF 90%, #336699);
+        background-image: -moz-linear-gradient(to bottom, to bottom, #336699 0%, #0099FF 90%, #336699);
+        background-image: -o-linear-gradient(to bottom, to bottom, #336699 0%, #0099FF 90%, #336699);
+        background-image: -ms-linear-gradient(to bottom, to bottom, #336699 0%, #0099FF 90%, #336699);
+        background-image: linear-gradient(to bottom, #336699 0%, #0099FF 90%, #336699);
+    }
+}
