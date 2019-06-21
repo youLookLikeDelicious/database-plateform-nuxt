@@ -21,5 +21,5 @@ nuxt配置<br>
 待优化部分<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1、banner图片延迟加载<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、线上部署后，nuxt服务端渲染使用larave的token。<br/>
-关键词
+关键词<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vue;nuxt;vuex;vue router;vue服务端渲染
