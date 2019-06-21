@@ -11,3 +11,6 @@ nuxt配置<br>
 &nbsp;&nbsp;&nbsp;&nbsp;全局sass<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;命名视图<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;...
+<br/>
+待优化部分
+&nbsp;&nbsp;&nbsp;&nbsp;banner动画
